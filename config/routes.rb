@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  Rails.application.routes.default_url_options[:host] = 'http://localhost:3000'
+  Rails.application.routes.default_url_options[:host] = 'https://sh.onpaper.ca'
 
   get '/s/:slug', to: 'link#show', as: :short
   post '/link', to: 'link#create'
