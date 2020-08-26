@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'link/show'
-  post 'link/create'
+  Rails.application.routes.default_url_options[:host] = 'http://localhost:3000'
+
+  get '/s/:slug', to: 'link#show', as: :short
+  post '/link', to: 'link#create'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
