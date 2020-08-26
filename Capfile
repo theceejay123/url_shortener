@@ -19,7 +19,8 @@ install_plugin Capistrano::SCM::Git
 #
 # For documentation on these, see for example:
 
-require 'capistrano/rails'
+require 'capistrano/rails/bundler'
+require 'capistrano/rails/migrations'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
 
