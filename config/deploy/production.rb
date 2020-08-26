@@ -9,6 +9,14 @@
 
 server '127.0.0.1', user: 'ceejay', roles: %w[app db web]
 
+set :branch, 'master'
+
+# Deploy to the user's home directory
+set :application, 'url_shortener'
+set :deploy_to, "/home/ceejay/#{fetch :application}"
+
+set :stage, :production
+
 # role-based syntax
 # ==================
 
