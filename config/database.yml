@@ -1,14 +1,13 @@
- 
- default: &default
-   adapter: postgresql
-   encoding: unicode
-   # For details on connection pooling, see Rails configuration guide
-   # https://guides.rubyonrails.org/configuring.html#database-pooling
-   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
- production:
-   <<: *default
-   database: url_shortener_production
-   username: ceejay
-   password: <%= ENV['DATABASE_PASSWORD'] %>
-   url: <%= ENV['DATABASE_URL'] %>
+production:
+  <<: *default
+  database: url_shortener
+  username: ceejay
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
