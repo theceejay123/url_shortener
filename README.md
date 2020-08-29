@@ -1,24 +1,28 @@
-# README
+# URL Shortener - based on ruby-on-rails \#fun
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+> So instead of me using __NodeJS__ and __ExpressJS__ + __MongoDB__, which by the way would've been easier...
+> I decided to just break my brain in the process and learn how to use **Passenger**, **NGINX**, **Ruby-on-rails** and **PostgreSQL**.
 
-* Ruby version
+> Also, I had to use __*Capistrano*__ to fully deploy my app, which honestly was kinda dumb on my part but whatever XD
+> It works, why bother making it harder for me right?
 
-* System dependencies
+> Well the only reason I made it like this is because I wanted to learn all of it. So in reality, it is pretty helpful that I did it this way!
 
-* Configuration
+---
+### Some stuff before you go!
+> 
+> 
+> 
+> 
 
-* Database creation
+---
 
-* Database initialization
 
-* How to run the test suite
+## Code Samples
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Installation
+
